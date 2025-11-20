@@ -75,17 +75,6 @@ changeImgButton.forEach(button => {
     indicatorActive.removeAttribute("data-active")
     indicator[indexActiveIndicator].dataset.active = true
   })
-})
-
-const navLinks = document.querySelectorAll('aside a[data-nav-target]');
-navLinks.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    const targetIndex = parseInt(link.dataset.navTarget);
-
-    mudarImagemParaIndice(targetIndex);
-  });
 });
 
 const LANGUAGE_KEY = 'siteLanguage';

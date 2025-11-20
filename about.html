@@ -1,156 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title id="titulo-pagina-sobre">Sobre</title>
 </head>
-    <body data-page="about">
-        <header>
-            <a href="#" id="logo">Logo</a>
-            <h1 id="h1-home">Mosaico da Vida</h1>
-            <button id="openMenu">&#9776;</button>
-            <nav id="menu">
-                <button id="closeMenu">X</button>
-                <a href="index.html" id="nav-home">Home</a>
-                <a href="april.html" id="nav-abril">Abril</a>
-                <a href="may.html" id="nav-maio">Maio</a>
-                <a href="june.html" id="nav-junho">Junho</a>
-                <a href="about.html" id="nav-sobre">Sobre</a>
-            </nav>
-            <div id="language-buttons-header">
-                <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
-                <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
-            </div>
-        </header>
-        <aside><h5></h5>
-           <nav class="menu-aside">
+
+<body data-page="about">
+    <header>
+        <a href="#" id="logo">Logo</a>
+        <h1 id="h1-home">Mosaico da Vida</h1>
+        <button id="openMenu">&#9776;</button>
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="april.html" id="nav-abril">Abril</a>
+            <a href="may.html" id="nav-maio">Maio</a>
+            <a href="june.html" id="nav-junho">Junho</a>
+            <a href="about.html" id="nav-sobre">Sobre</a>
+        </nav>
+        <div id="language-buttons-header">
+            <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
+            <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
+        </div>
+    </header>
+    <aside>
+        <h5></h5>
+        <nav class="menu-aside">
             <a href="#header" id="link-conscientizacao">Conscientizações Mensais</a>
             <a href="#importancia" id="link-importancia">Importância</a>
             <a href="#participar" id="link-participar">Como Participar</a>
             <a href="#auxilio" id="link-auxilio">Auxilios</a>
             <a href="#projetistas" id="link-projetistas">Projetistas</a>
-             </nav>
-        </aside>
-        <main class="main">
-            <section class="section-container">
-                <div id="header">
-                    <h2 id="titulo-header">
-                        Conscientizações Mensais e sua importância!</h2>
-                        <audio controls type="audio/mp3" id="player"></audio>
-                    <p id="texto-header">
-                        As cores e as campanhas de conscientização mensais desempenham um papel fundamental na promoção da saúde e do bem-estar, servindo como ferramentas poderosas para aumentar a atenção, facilitar a fixação da mensagem na memória e promover a educação e o engajamento da população.
-                        Cada mês do ano é associado a uma ou mais cores que representam temas específicos de saúde, como prevenção e combate a doenças, promoção da saúde mental, combate à violência e outras questões sociais.
-                        Essas campanhas surgiram de iniciativas lideradas por ONGs, associações médicas e a sociedade civil, com o objetivo de tornar temas importantes mais visíveis e acessíveis.
-                    </p>
-                </div>
-                <div id="importancia">
-                    <h2 id="titulo-importancia">Importância</h2>
-                    <p id="texto-importancia">
-                        Apesar do sucesso das campanhas, há uma reflexão necessária sobre se a conscientização é acompanhada por oferta real de serviços de saúde à população.
-                    </p>
-                </div>
-                <div id="participar">
-                    <h2 id="titulo-participar">Como Participar</h2>
-                    <p id="texto-participar">
-                        Participar das campanhas mensais coloridas é uma forma eficaz de promover a conscientização sobre diversas causas de saúde, bem-estar e segurança no ambiente de trabalho e na sociedade em geral. Cada mês do ano é associado a uma cor específica que representa uma causa importante, e as ações podem ser realizadas tanto por empresas quanto por indivíduos.
-                    </p>
-                </div>
-                <div id="auxilio">
-                    <h2 id="titulo-auxilio">Auxílios</h2>
-                    <p id="texto-auxilio">
-                        O impacto dessas campanhas de conscientização vai além da simples divulgação de informações. Elas ajudam a reduzir o estigma e promover a segurança em áreas cruciais como o Autismo, a Segurança no Trabalho, a Segurança no Trânsito, a Doação de Sangue e a luta contra a Leucemia, incentivando conversas abertas e a adoção de práticas mais seguras. Por exemplo, em Abril, a cor Azul é dedicada à conscientização sobre o Autismo, buscando combater o preconceito e incentivar a inclusão e aceitação, enquanto o Verde foca na Segurança e Saúde no Trabalho, mobilizando a prevenção de acidentes e doenças ocupacionais. Já em Maio, a cor Amarela (Maio Amarelo) conscientiza sobre a Segurança no Trânsito, mobilizando a sociedade para a responsabilidade e o acolhimento nas vias. Por sua vez, Junho destaca o Vermelho para a Doação de Sangue, um ato vital que simboliza a vida, e o Laranja para a conscientização sobre Leucemia e Anemia, representando esperança e renovação. A presença destas cores, cada uma com seu simbolismo e importância em distintos meses, contribui para um estado de atenção, prevenção e apoio social contínuo.
-                    </p>
-                </div>
-                <div id="projetistas">
-                    <h2 id="titulo-projetistas">Projetistas</h2>
-                    <div class="desenvolvedores">
-                        <!-- Desenvolvedor 1 -->
-                        <div class="dev">
-                            <div class="sobre">
-                                <img src="#" alt="" class="imgPerfil">
-                                <h3 id="nome1">Nome</h3>
-                                <div class="social">
-                                    <a href="#"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png" alt="Icon GithubWhite" id="iconDark"></a>
-                                        <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
-                                </div>
-                                <div class="txtSobre">
-                                    <h3 id="titulo-sobre1">Sobre</h3>
-                                    <p id="texto-sobre1">De repente, ele olhou em volta e notou a viela...</p>
-                                </div>
-                                <div id="project1">
-                                    <h3 id="titulo-projeto1">Contribuição no Projeto:</h3>
-                                    <p id="texto-projeto1">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                                </div>
+        </nav>
+    </aside>
+    <main class="main">
+        <section class="section-container">
+            <div id="header">
+                <h2 id="titulo-header">
+                    Conscientizações Mensais e sua importância!</h2>
+                <audio controls type="audio/mp3" id="player"></audio>
+                <p id="texto-header">
+                    As cores e as campanhas de conscientização mensais desempenham um papel fundamental na promoção da
+                    saúde e do bem-estar, servindo como ferramentas poderosas para aumentar a atenção, facilitar a
+                    fixação da mensagem na memória e promover a educação e o engajamento da população.
+                    Cada mês do ano é associado a uma ou mais cores que representam temas específicos de saúde, como
+                    prevenção e combate a doenças, promoção da saúde mental, combate à violência e outras questões
+                    sociais.
+                    Essas campanhas surgiram de iniciativas lideradas por ONGs, associações médicas e a sociedade civil,
+                    com o objetivo de tornar temas importantes mais visíveis e acessíveis.
+                </p>
+            </div>
+            <div id="importancia">
+                <h2 id="titulo-importancia">Importância</h2>
+                <p id="texto-importancia">
+                    Apesar do sucesso das campanhas, há uma reflexão necessária sobre se a conscientização é acompanhada
+                    por oferta real de serviços de saúde à população.
+                </p>
+            </div>
+            <div id="participar">
+                <h2 id="titulo-participar">Como Participar</h2>
+                <p id="texto-participar">
+                    Participar das campanhas mensais coloridas é uma forma eficaz de promover a conscientização sobre
+                    diversas causas de saúde, bem-estar e segurança no ambiente de trabalho e na sociedade em geral.
+                    Cada mês do ano é associado a uma cor específica que representa uma causa importante, e as ações
+                    podem ser realizadas tanto por empresas quanto por indivíduos.
+                </p>
+            </div>
+            <div id="auxilio">
+                <h2 id="titulo-auxilio">Auxílios</h2>
+                <p id="texto-auxilio">
+                    O impacto dessas campanhas de conscientização vai além da simples divulgação de informações. Elas
+                    ajudam a reduzir o estigma e promover a segurança em áreas cruciais como o Autismo, a Segurança no
+                    Trabalho, a Segurança no Trânsito, a Doação de Sangue e a luta contra a Leucemia, incentivando
+                    conversas abertas e a adoção de práticas mais seguras. Por exemplo, em Abril, a cor Azul é dedicada
+                    à conscientização sobre o Autismo, buscando combater o preconceito e incentivar a inclusão e
+                    aceitação, enquanto o Verde foca na Segurança e Saúde no Trabalho, mobilizando a prevenção de
+                    acidentes e doenças ocupacionais. Já em Maio, a cor Amarela (Maio Amarelo) conscientiza sobre a
+                    Segurança no Trânsito, mobilizando a sociedade para a responsabilidade e o acolhimento nas vias. Por
+                    sua vez, Junho destaca o Vermelho para a Doação de Sangue, um ato vital que simboliza a vida, e o
+                    Laranja para a conscientização sobre Leucemia e Anemia, representando esperança e renovação. A
+                    presença destas cores, cada uma com seu simbolismo e importância em distintos meses, contribui para
+                    um estado de atenção, prevenção e apoio social contínuo.
+                </p>
+            </div>
+            <div id="projetistas">
+                <h2 id="titulo-projetistas">Projetistas</h2>
+                <div class="desenvolvedores">
+                    <!-- Desenvolvedor 1 -->
+                    <div class="dev">
+                        <div class="sobre">
+                            <img src="#" alt="" class="imgPerfil">
+                            <h3 id="nome1">Nome</h3>
+                            <div class="social">
+                                <a href="#"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github"
+                                        id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png"
+                                        alt="Icon GithubWhite" id="iconDark"></a>
+                                <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
+                            </div>
+                            <div class="txtSobre">
+                                <h3 id="titulo-sobre1">Sobre</h3>
+                                <p id="texto-sobre1">De repente, ele olhou em volta e notou a viela...</p>
+                            </div>
+                            <div id="project1">
+                                <h3 id="titulo-projeto1">Contribuição no Projeto:</h3>
+                                <p id="texto-projeto1">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
                             </div>
                         </div>
-                        <!--Dev 2-->
-                        <div class="dev">
-                            <div class="sobre">
-                                <img src="midia/img/perfil/igor.jpeg" alt="...." class="imgPerfil">
-                                <h3 id="nome2">Igor Rodrigues</h3>
-                                <div class="social">
-                                    <a href="https://github.com/igoormrn-droid"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png" alt="Icon GithubWhite" id="iconDark"></a>
-                                    <a href="https://www.linkedin.com/in/igor-rodrigues-42a1ba1bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
-                                </div>
-                                <div class="txtSobre">
-                                    <h3 id="titulo-sobre2">Sobre Mim</h3>
-                                    <p id="texto-sobre2">Olá! Me chamo Igor Rodrigues, tenho 28 anos e sou estudante de Desenvolvimento de Sistemas pela Etec Dra. Ruth Cardoso.</p>
-                                    <p id="texto-sobre2-b">Meu principal foco no Front-End, é transformar ideias em interfaces web funcionais e acessíveis.</p>
-                                </div>
-                                <div id="project2">
-                                    <h3 id="titulo-projeto2">Contribuição no Projeto:</h3>
-                                    <p id="texto-projeto2">Responsável pelo desenvolvimento da estrutura HTML, garantindo uma base sólida e organizada para o projeto.</p>
-                                    <p id="texto-projeto2-b">Minha contribuição foi criar um código limpo, acessível e compatível com diferentes navegadores, facilitando a interação com CSS e JavaScript.</p>
-                                </div>
+                    </div>
+                    <!--Dev 2-->
+                    <div class="dev">
+                        <div class="sobre">
+                            <img src="midia/img/perfil/igor.jpeg" alt="...." class="imgPerfil">
+                            <h3 id="nome2">Igor Rodrigues</h3>
+                            <div class="social">
+                                <a href="https://github.com/igoormrn-droid"><img src="midia/img/sobre/icons/icog1.png"
+                                        alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png"
+                                        alt="Icon GithubWhite" id="iconDark"></a>
+                                <a
+                                    href="https://www.linkedin.com/in/igor-rodrigues-42a1ba1bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                                        src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
                             </div>
-                         </div>
-                        <!-- Desenvolvedor 3 -->
-                        <div class="dev">
-                            <div class="sobre">
-                                <img src="#" alt="" class="imgPerfil">
-                                <h3 id="nome3">Nome3</h3>
-                                <div class="social">
-                                    <a href="#"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png" alt="Icon GithubWhite" id="iconDark"></a>
-                                        <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
-                                </div>
-                                <div class="txtSobre">
-                                    <h3 id="titulo-sobre3">Sobre3</h3>
-                                    <p id="texto-sobre3">De repente, ele olhou em volta e notou a viela...</p>
-                                </div>
-                                <div id="project3">
-                                    <h3 id="titulo-projeto3">Contribuição no Projeto:</h3>
-                                    <p id="texto-projeto3">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                                </div>
-                             </div>
+                            <div class="txtSobre">
+                                <h3 id="titulo-sobre2">Sobre Mim</h3>
+                                <p id="texto-sobre2">Olá! Me chamo Igor Rodrigues, tenho 28 anos e sou estudante de
+                                    Desenvolvimento de Sistemas pela Etec Dra. Ruth Cardoso.</p>
+                                <p id="texto-sobre2-b">Meu principal foco no Front-End, é transformar ideias em
+                                    interfaces web funcionais e acessíveis.</p>
+                            </div>
+                            <div id="project2">
+                                <h3 id="titulo-projeto2">Contribuição no Projeto:</h3>
+                                <p id="texto-projeto2">Responsável pelo desenvolvimento da estrutura HTML, garantindo
+                                    uma base sólida e organizada para o projeto.</p>
+                                <p id="texto-projeto2-b">Minha contribuição foi criar um código limpo, acessível e
+                                    compatível com diferentes navegadores, facilitando a interação com CSS e JavaScript.
+                                </p>
+                            </div>
                         </div>
-                        <!--Dev 4-->
-                        <div class="dev">
-                            <div class="sobre">
-                                <img src="midia/img/perfil/luiza.jpg" alt="...." class="imgPerfil">
-                                <h3 id="nome4">Maria Luiza</h3>
-                                <div class="social">
-                                    <a href="https://github.com/oimarialuizas#"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png" alt="Icon GithubWhite" id="iconDark"></a>
-                                    <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
-                                </div>
-                                <div class="txtSobre">
-                                    <h3 id="titulo-sobre4">Sobre Mim</h3>
-                                    <p id="texto-sobre4">Olá! Meu nome é Maria Luiza, tenho 23 anos e sou estudante do curso técnico de Desenvolvimento de Sistemas na ETEC Dra. Ruth Cardoso. Durante minha formação, venho desenvolvendo habilidades sólidas em HTML e CSS, que me permitem criar páginas web bem estruturadas, responsivas e visualmente agradáveis.</p>
-                                </div>
-                                <div id="project4">
-                                    <h3 id="titulo-projeto4">Contribuição no Projeto:</h3>
-                                    <p id="texto-projeto4">Responsável pela criação e refinamento do design no Figma, desenvolvendo wireframes de baixa e alta resolução. Pela estruturação e organização do HTML das páginas, finalizando o código com acessibilidade. Esse projeto me permitiu aplicar na prática meus conhecimentos em desenvolvimento web e design de interfaces.</p>
-                                </div>
+                    </div>
+                    <!-- Desenvolvedor 3 -->
+                    <div class="dev">
+                        <div class="sobre">
+                            <img src="#" alt="" class="imgPerfil">
+                            <h3 id="nome3">Nome3</h3>
+                            <div class="social">
+                                <a href="#"><img src="midia/img/sobre/icons/icog1.png" alt="Icone Github"
+                                        id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png"
+                                        alt="Icon GithubWhite" id="iconDark"></a>
+                                <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
+                            </div>
+                            <div class="txtSobre">
+                                <h3 id="titulo-sobre3">Sobre3</h3>
+                                <p id="texto-sobre3">De repente, ele olhou em volta e notou a viela...</p>
+                            </div>
+                            <div id="project3">
+                                <h3 id="titulo-projeto3">Contribuição no Projeto:</h3>
+                                <p id="texto-projeto3">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Dev 4-->
+                    <div class="dev">
+                        <div class="sobre">
+                            <img src="midia/img/perfil/luiza.jpg" alt="...." class="imgPerfil">
+                            <h3 id="nome4">Maria Luiza</h3>
+                            <div class="social">
+                                <a href="https://github.com/oimarialuizas#"><img src="midia/img/sobre/icons/icog1.png"
+                                        alt="Icone Github" id="iconWhite"><img src="midia/img/sobre/icons/icog1bl.png"
+                                        alt="Icon GithubWhite" id="iconDark"></a>
+                                <a href="#"><img src="midia/img/sobre/icons/linkedin-logo.png" alt="icone Linkedin"></a>
+                            </div>
+                            <div class="txtSobre">
+                                <h3 id="titulo-sobre4">Sobre Mim</h3>
+                                <p id="texto-sobre4">Olá! Meu nome é Maria Luiza, tenho 23 anos e sou estudante do curso
+                                    técnico de Desenvolvimento de Sistemas na ETEC Dra. Ruth Cardoso. Durante minha
+                                    formação, venho desenvolvendo habilidades sólidas em HTML e CSS, que me permitem
+                                    criar páginas web bem estruturadas, responsivas e visualmente agradáveis.</p>
+                            </div>
+                            <div id="project4">
+                                <h3 id="titulo-projeto4">Contribuição no Projeto:</h3>
+                                <p id="texto-projeto4">Responsável pela criação e refinamento do design no Figma,
+                                    desenvolvendo wireframes de baixa e alta resolução. Pela estruturação e organização
+                                    do HTML das páginas, finalizando o código com acessibilidade. Esse projeto me
+                                    permitiu aplicar na prática meus conhecimentos em desenvolvimento web e design de
+                                    interfaces.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <p id="footer-text">Copyright &copy; 2025, CILM. Todos os direitos reservados.</p>
-        </footer>
-        <script src="js/script.js"></script>
-    </body>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p id="footer-text">Copyright &copy; 2025, CILM. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
