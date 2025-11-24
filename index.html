@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="index">
     <header>
         <a href="#" id="logo">Logo</a>
         <h1 id="h1-home">Mosaico da Vida</h1>
         <button id="openMenu">&#9776;</button>
-
         <nav id="menu">
             <button id="closeMenu">X</button>
-            <a href="index.html" id="link-home">Home</a>
-            <a href="april.html" id="link-abril">Abril</a>
-            <a href="may.html" id="link-maio">Maio</a>
-            <a href="june.html" id="link-junho">Junho</a>
-            <a href="about.html" id="link-sobre">Sobre</a>
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="april.html" id="nav-abril">Abril</a>
+            <a href="may.html" id="nav-maio">Maio</a>
+            <a href="june.html" id="nav-junho">Junho</a>
+            <a href="about.html" id="nav-sobre">Sobre</a>
         </nav>
-         <div id="language-buttons">
-            <button id="btn-portugues">Português</button>
-            <button id="btn-ingles">English</button>
-         </div>
+        <div id="language-buttons-header">
+            <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
+            <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
+        </div>
     </header>
     <aside></aside>
     <main>
         <div class="containerImages">
             <div class="imgFull">
-                <img class="img-display" data-active="true" src="midia/img/abril/image1.png" alt="">
+                <img class="img-display" data-active="true" src="midia/img/abril/image111.png" alt="">
                 <img class="img-display" src="midia/img/maio/image/principal" alt="">
                 <img class="img-display" src="midia/img/junho/image/principal.png" alt="">
-
-                <button class="previous-button" data-change-img-button="previous">&lt;</button>
-                <button class="next-button" data-change-img-button="next">&gt;</button>
+                <button class="previous-button" data-change-img-button="previous">&#11164</button>
+                <button class="next-button" data-change-img-button="next">&#x2B9E</button>
+                <div class="indicators">
+                    <div class="indicator" data-active="true"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                <div class="figures">
+                    <figure class="figure">
+                        <img src="midia/img/abril/azul/images/austismo500px.png" class="figure-img img-fluid rounded"
+                            alt="...">
+                        <figcaption class="figure-caption text-end"></figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="midia/img/maio/image/principal" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end"></figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="midia/img/junho/image/principal.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end"></figcaption>
+                    </figure>
+                </div>
             </div>
-
-            <div class="miniature">
-                <div id="abril-miniature">
-                    <img src="midia/img/abril/azul/images/autismo.png" alt="">
-                </div>
-                <div id="maioMiniature">
-                    <img src="midia/img/maio/image/principal" alt="">
-                </div>
-                <div id="junhoMiniature">
-                    <img src="midia/img/junho/image/principal.png" alt="">
-                </div>
-            </div>
-        </div>
     </main>
     <footer class="footer">
         <p id="footer-text">Copyright &copy; 2025, CILM. Todos os direitos reservados.</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>

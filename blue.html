@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
     <title id="titulo-pagina">Azul</title>
 </head>
-    <body>
-        <script src="js/script2.js"></script>
+    <body data-page="blue">
         <header class="header">
             <a href="#" id="logo">Logo</a>
             <h1 id="h1-home">Mosaico da Vida</h1>
@@ -20,12 +19,11 @@
                 <a href="june.html" id="nav-junho">Junho</a>
                 <a href="about.html" id="nav-sobre">Sobre</a>
             </nav>
-            <div id="language-buttons-header">
-                <button id="btn-portugues-header">Português</button>
-                <button id="btn-ingles-header">English</button>
+                 <div id="language-buttons-header">
+                <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
+                <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
             </div>
-        </header>
-
+    </header>
         <aside>
             <div></div>
             <h1 id="titulo-abril-azul">Abril Azul</h1>
@@ -38,7 +36,6 @@
                     <a href="green.html" id="link-verde">Verde</a>
                 </button>
             </nav>
-
         </aside>
         <main class="main">
             <div class="container">
@@ -69,7 +66,7 @@
                         Não existe um exame específico que detecta o transtorno. O diagnóstico é feito a partir do relato dos pais e avaliação médica. No entanto, em alguns casos, pode ser difícil fechar esse diagnóstico, ainda mais em crianças pequenas.
                     </p>
                     <br>
-                    <p id="p-footer">
+                    <p id="p-footer-azul">
                         Para saber mais sobre o TEA acesse: <strong><a href="https://educadiversidade.unesp.br/guia-de-orientacoes-sobre-transtorno-do-espectro-autista/">Guia de Orientação sobre Transtorno do Espectro Autista da UNESP</a></strong>
                     </p>
                 </section>
@@ -81,3 +78,4 @@
         <script src="js/script.js"></script>
     </body>
 </html>
+

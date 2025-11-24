@@ -3,27 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style2.css">
-        <title id="titulo-pagina">Maio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title id="titulo-pagina-maio">Maio</title>
     </head>
-    <body>
-        <script src="js/script2.js"></script>
+    <body data-page="may">
         <header class="header">
             <a href="#" id="logo">Logo</a>
             <h1 id="h1-home">Mosaico da Vida</h1>
             <button id="openMenu">&#9776;</button>
-                <nav id="menu">
-                    <button id="closeMenu">X</button>
-                    <a href="index.html" id="nav-home">Home</a>
-                    <a href="april.html" id="nav-abril">Abril</a>
-                    <a href="may.html" id="nav-maio">Maio</a>
-                    <a href="june.html" id="nav-junho">Junho</a>
-                    <a href="about.html" id="nav-sobre">Sobre</a>
-                </nav>
-                <div id="language-buttons-header">
-                    <button id="btn-portugues-header">Português</button>
-                    <button id="btn-ingles-header">English</button>
-                </div>
+            <nav id="menu">
+                <button id="closeMenu">X</button>
+                <a href="index.html" id="nav-home">Home</a>
+                <a href="april.html" id="nav-abril">Abril</a>
+                <a href="may.html" id="nav-maio">Maio</a>
+                <a href="june.html" id="nav-junho">Junho</a>
+                <a href="about.html" id="nav-sobre">Sobre</a>
+            </nav>
+                 <div id="language-buttons-header">
+                <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
+                <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
+            </div>
         </header>
         <aside>
             <div></div>
@@ -55,3 +54,4 @@
         <script src="js/script.js"></script>
     </body>
 </html>
+
