@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title id="titulo-pagina-amarelo">Amarelo</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Mosaico da Vida - Maio Amarelo</title>
 </head>
-<body data-page="yellow">
-    <header class="header"></header>
-    <a href="#" id="logo">Logo</a>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo/Logo - Mosaico da Vida.png">
             <h1 id="h1-home">Mosaico da Vida</h1>
-            <button id="openMenu">&#9776;</button>
-            <nav id="menu">
-                <button id="closeMenu">X</button>
+        </div>
+        <ul class="menu">
+            <li>
                 <a href="index.html" id="nav-home">Home</a>
+            </li>
+            <li>
                 <a href="april.html" id="nav-abril">Abril</a>
+            </li>
+            <li>
                 <a href="may.html" id="nav-maio">Maio</a>
+            </li>
+            <li>
                 <a href="june.html" id="nav-junho">Junho</a>
+            </li>
+            <li>
                 <a href="about.html" id="nav-sobre">Sobre</a>
-            </nav>
-                 <div id="language-buttons-header">
-                <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
-                <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
-            </div>
+            </li>
+        </ul>
     </header>
-    <aside>
-        <div></div>
-        <h1 id="titulo-maio-amarelo">Maio Amarelo</h1>
-        <hr>
-        <nav class="menu-aside">
-            <button class="button-menu-aside"><a href="may.html" id="link-maio">Maio</a></button>
-        </nav>
-    </aside>
-    <main class="main">
-     <div class="container">
-        <h1 id="titulo-transito">Conscientização Sobre as Leis de Trânsito. </h1>
-        <hr>
-       <section class="section-container">
-         <p id="texto-transito"> O <strong>Maio Amarelo</strong> é uma campanha de conscientização realizada no Brasil e em outros países no mês de maio. Tem como objetivo conscientizar condutores e pedestres sobre a importância de respeitar as leis de trânsito para evitar que acidentes aconteçam e, assim, reduzir o número de vítimas em acidentes de trânsito. </p>
-         <p id="texto-transito-2"> No Brasil, a campanha começou a ser realizada a partir de 2014, sendo criada pelo <u><strong>Observatório Nacional de Segurança Viária</strong></u>. Sua criação aconteceu em resposta à resolução da ONU que fez com que a década iniciada em 2011 fosse o período para promover ações por um trânsito mais seguro. </p>
-         <p id="texto-transito-3"> O Maio Amarelo atua em defesa da segurânça viária, buscando construir um trânsito mais consciente. Dessa forma, o Maio Amarelo tem como objetivo primário a redução dos índices de violência no trânsito em nosso país.</p>
-         <p id="texto-transito-4">A redução na violência do trânsito durante o Maio Amarelo se dá pela conscientização por meio de diversas ações. Além disso, um dos propósitos é engajar a população em ações que tratem desse assunto.</p>
-         <h2 id="titulo-transito-2">Qual é a Importância do <strong>"Maio Amarelo"</strong> ?</h2>
-         <hr>
-         <p id="texto-transito-2-1"> O Maio Amarelo é uma campanha importante para a sociedade brasileira porque promove a informação e conscientização sobre os riscos de não respeitar as leis de trânsito. Isso é de fundamental importância, uma vez que o trânsito do Brasil é um dos mais violentos do mundo. Somente em 2022, estima-se que 34 mil pessoas tenham perdido a vida vítimas de acidentes de trânsito no Brasil.</p>
-         <h2 id="titulo-transito-3">Por que o mês de <strong>Maio</strong> foi escolhido ?</h2>
-         <hr>
-         <p id="texto-transito-3-1"> O mês de maio foi escolhido como o mês para que o Maio Amarelo acontecesse porque a <u><strong>Organização das Nações Unidas</strong></u> decretou a <strong>“Década de ações para a segurança no trânsito”</strong> em 11 de maio de 2011. Isso fez de maio o mês referência na tomada de ações contra a violência no trânsito.</p>
-         <br>
-         <p id="p-footer-amarelo">Veja mais sobre o Maio Amarelo <strong><a href="https://brasilescola.uol.com.br/datas-comemorativas/maio-amarelo.htm ">Clicando Aqui.</a> </strong></p>
-        </section>
-     </div>
-        </main>
-        <footer class="footer"><p id="footer-text">&copy; 2025, CILM. Todos os direitos reservados.</p></footer>
-        <script src="js/script.js"></script>
-    </body>
+
+    <main>
+        <div class="main-content as-cont">
+            <aside class="aside-cont">
+                <h2 id="link-maio">Maio</h2>
+                <img src="img/maio/66393d24a7be7.jpg" alt="Conscientização Abril">
+                <div class="btn-group dropdown-center">
+                    <a type="button" href="may.html" class="btn btn-secondary" id="link-maio">Maio</a>
+                    <a type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="yellow.html" id="btn-yellow" id="link-amarelo">Amarelo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="other.html" id="btn-other" id="link-other">Outros</a></li>
+                    </ul>
+                </div>
+                <div id="language-buttons-header">
+                    <button onclick="setLanguage('pt')" id="btn-portugues-header">PT-BR</button>
+                    <button onclick="setLanguage('en')" id="btn-ingles-header">EN-US</button>
+                </div>
+            </aside>
+            <div class="main-aside">
+                <h2 id="titulo-transito">Maio Amarelo | Conscientização Sobre as Leis de Trânsito</h1>
+                <p id="texto-transito">
+                    O <strong>Maio Amarelo</strong> é uma campanha de conscientização realizada no Brasil e em outros países no mês de maio. Tem como objetivo conscientizar condutores e pedestres sobre a importância de respeitar as leis de trânsito para evitar que acidentes aconteçam e, assim, reduzir o número de vítimas em acidentes de trânsito.
+                </p>
+                <p id="texto-transito-2">
+                    No Brasil, a campanha começou a ser realizada a partir de 2014, sendo criada pelo <u><strong>Observatório Nacional de Segurança Viária</strong></u>. Sua criação aconteceu em resposta à resolução da ONU que fez com que a década iniciada em 2011 fosse o período para promover ações por um trânsito mais seguro.
+                </p>
+                <p id="texto-transito-3">
+                    O Maio Amarelo atua em defesa da segurânça viária, buscando construir um trânsito mais consciente. Dessa forma, o Maio Amarelo tem como objetivo primário a redução dos índices de violência no trânsito em nosso país.
+                </p>
+                <p id="texto-transito-4">
+                    A redução na violência do trânsito durante o Maio Amarelo se dá pela conscientização por meio de diversas ações. Além disso, um dos propósitos é engajar a população em ações que tratem desse assunto.
+                </p>
+                <h2 id="titulo-transito-2">Qual é a importância do Maio Amarelo?</h2>
+                <p id="texto-transito-5">
+                    O Maio Amarelo é uma campanha importante para a sociedade brasileira porque promove a informação e conscientização sobre os riscos de não respeitar as leis de trânsito. Isso é de fundamental importância, uma vez que o trânsito do Brasil é um dos mais violentos do mundo. Somente em 2022, estima-se que 34 mil pessoas tenham perdido a vida vítimas de acidentes de trânsito no Brasil.
+                </p>
+                <h2 id="titulo-transito-3">Por que o mês de Maio foi escolhido?</h2>
+                <p id="texto-transito-6">
+                    O mês de maio foi escolhido como o mês para que o Maio Amarelo acontecesse porque a <u><strong>Organização das Nações Unidas</strong></u> decretou a <strong>“Década de ações para a segurança no trânsito”</strong> em 11 de maio de 2011. Isso fez de maio o mês referência na tomada de ações contra a violência no trânsito.
+                </p>
+                <p id="texto-transito-7">
+                    Veja mais sobre o Maio Amarelo <a href="https://brasilescola.uol.com.br/datas-comemorativas/maio-amarelo.htm ">clicando aqui.</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Mosaico da Vida &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
