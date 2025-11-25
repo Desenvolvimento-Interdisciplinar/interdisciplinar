@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mosaico da Vida - Junho</title>
+</head>
+<body data-page="red">
+    <header>
+        <div class="logo">
+            <img src="img/logo/Logo - Mosaico da Vida.png">
+            <h1 id="h1-home">Mosaico da Vida</h1>
+        </div>
+        <ul class="menu">
+            <li>
+                <a href="index.html" id="nav-home">Home</a>
+            </li>
+            <li>
+                <a href="april.html" id="nav-abril">Abril</a>
+            </li>
+            <li>
+                <a href="may.html" id="nav-maio">Maio</a>
+            </li>
+            <li>
+                <a href="june.html" id="nav-junho">Junho</a>
+            </li>
+            <li>
+                <a href="about.html" id="nav-sobre">Sobre</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="main-content as-cont">
+            <aside class="aside-cont">
+                <h2 id="link-junho">Junho</h2>
+                <img src="img/junho/vermelho/junhovermelho.png" alt="Conscientização Abril">
+                <div class="btn-group dropdown-center">
+                    <a type="button" href="june.html" class="btn btn-secondary" id="link-junho">Junho</a>
+                    <a type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="red.html" id="btn-red" id="link-vermelho">Vermelho</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="orange.html" id="btn-orange" id="link-laranja">Laranja</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="other.html" id="btn-other" id="link-other">Outros</a></li>
+                    </ul>
+                </div>
+                <div id="language-buttons-header">
+                    <button onclick="setLanguage('pt')" id="btn-portugues-header">PT-BR</button>
+                    <button onclick="setLanguage('en')" id="btn-ingles-header">EN-US</button>
+                </div>
+            </aside>
+            <div class="main-aside">
+                <h2 id="titulo-doacao">Junho Vermelho | Conscientização sobre Doação de Sangue</h1>
+                <p id="texto-doacao-1">
+                    O Junho Vermelho é uma campanha nacional que busca incentivar e conscientizar a população da importância de <strong>Doar Sangue</strong>. A campanha procura engajar a população, apresentando-o como um ato de solidariedade que é responsável por salvar vidas. É uma campanha promovida no Brasil, mas existem outras semelhantes no exterior, embora não sejam realizadas em junho.
+                </p>
+                <h2 id="titulo-doacao-2">Qual é a importância do Junho Vermelho?</h2>
+                <p id="texto-doacao-2-1">
+                    A campanha do Junho Vermelho é fundamental para a saúde pública de nosso país, pois incentiva que as pessoas doem sangue, mantendo os estoques em níveis desejáveis. Os estoques de sangue são fundamentais, pois são usados em atendimentos médicos emergenciais, permitindo que milhares de vidas sejam salvas.
+                </p>
+                <p id="texto-adocao-2-2">
+                    O sangue doado pelas pessoas é utilizado em procedimentos cirúrgicos, no atendimento emergencial a pessoas que sofreram acidentes e perderam quantidade significativa de sangue, e também em pacientes que sofrem de alguma doença crônica e que necessitem de transfusão, entre outros. A importância das bolsas de sangue no atendimento médico é fundamental e por isso a doação de sangue e o Junho Vermelho são tão importantes.
+                </p>
+                <h2 id="titulo-doacao-3">Por que o mês de Junho foi escolhido?</h2>
+                <p id="texto-doacao-3-1">
+                    A escolha do mês de junho aconteceu porque nele é celebrada uma importante data comemorativa: <strong><ul> Dia Mundial do Doador de Sangue</ul></strong>, em 14 de junho. Essa data foi criada pela <ul>Organização Mundial da Saúde</ul> (OMS) como forma de homenagear os doares, incentivando outras pessoas a doarem também.
+                </p>
+                <h2 id="titulo-doacao-4">Quem pode doar sangue?</h2>
+                <p id="texto-doacao-4-1">
+                    Nem todas as pessoas podem doar sangue, existindo alguns critérios que são estabelecidos pelo Ministério da Saúde. Veja quem pode doar sangue:
+                </p>
+                <ol>
+                    <li id="item-1">Pessoas entre 16 e 69 anos de idade (menores de 18 anos precisam de autorização dos responsáveis);</li>
+                    <li id="item-2">Pesar no mínimo 50 kg;</li>
+                    <li id="item-3">Ter dormido, no mínimo, seis horas nas últimas 24 horas;</li>
+                    <li id="item-4">Estar bem alimentado (jejum de alimentos gordurosos nas últimas três horas e doar sangue somente duas horas depois do almoço).</li>
+                </ol>
+                <p id="p-footer-vermelho">
+                    Veja mais sobre o Junho Vermelho <a href="https://brasilescola.uol.com.br/datas-comemorativas/junho-vermelho.htm">clicando aqui.</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer-text">
+        <p>Mosaico da Vida &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
