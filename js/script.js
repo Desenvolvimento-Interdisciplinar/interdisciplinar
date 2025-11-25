@@ -24,59 +24,6 @@ closeMenu.addEventListener('click', () => {
 
 })
 
-const changeImgButton = document.querySelectorAll("[data-change-img-button]")
-
-changeImgButton.forEach(button => {
-  button.addEventListener("click", () => {
-    const imgFull = document.querySelector(".imgFull")
-    const images = imgFull.querySelectorAll(".img-display")
-    const activeImg = imgFull.querySelector("[data-active]")
-    let indexActiveImg = Array.from(images).indexOf(activeImg)
-
-    const indicators = document.querySelector(".indicators")
-    const indicator = indicators.querySelectorAll(".indicator");
-    const indicatorActive = indicators.querySelector("[data-active]");
-    let indexActiveIndicator = Array.from(indicator).indexOf(indicatorActive);
-
-    let timer;
-
-    // indicator index
-    indexActiveIndicator = button.dataset.changeImgButton === "next" ? (
-      indexActiveIndicator + 1
-    ) : (
-      indexActiveIndicator - 1
-    )
-
-    if (indexActiveIndicator >= indicator.length) {
-      indexActiveIndicator = 0
-    }
-
-    if (indexActiveIndicator < 0) {
-      indexActiveIndicator = indicator.length - 1
-    }
-    //images index
-    indexActiveImg = button.dataset.changeImgButton === "next" ? (
-      indexActiveImg + 1
-    ) : (
-      indexActiveImg - 1
-    )
-
-    if (indexActiveImg >= images.length) {
-      indexActiveImg = 0
-    }
-
-    if (indexActiveImg < 0) {
-      indexActiveImg = images.length - 1
-    }
-
-    activeImg.removeAttribute("data-active")
-    images[indexActiveImg].dataset.active = true
-
-    indicatorActive.removeAttribute("data-active")
-    indicator[indexActiveIndicator].dataset.active = true
-  })
-});
-
 const LANGUAGE_KEY = 'siteLanguage';
 const player = document.getElementById("player");
 
@@ -121,5 +68,3 @@ function checkAndApplyLanguage() {
 }
 
 document.addEventListener('DOMContentLoaded', checkAndApplyLanguage);
-
-
