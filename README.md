@@ -12,10 +12,8 @@ index.html >
 css: > style.css 
      > style2.css
 js:  > script.js
-> data: 
-    >translation:    
-                en.json 
-                pt.json
+> data:  en.json 
+         pt.json
 midia: 
 > audio: >
     about >
@@ -35,7 +33,6 @@ midia:
         >icons
 > video:
     > index:
-
 
 
 
