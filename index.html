@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="icon" type="icon/png" href="midia/img/logo/ico.webp" alt="...">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+    <title id="titulo-pagina-home">Mosaico da Vida - Home</title>
 </head>
 
 <body data-page="index">
     <header>
-        <a href="#" id="logo">Logo</a>
-        <h1 id="h1-home">Mosaico da Vida</h1>
-        <button id="openMenu">&#9776;</button>
-        <nav id="menu">
-            <button id="closeMenu">X</button>
-            <a href="index.html" id="nav-home">Home</a>
-            <a href="april.html" id="nav-abril">Abril</a>
-            <a href="may.html" id="nav-maio">Maio</a>
-            <a href="june.html" id="nav-junho">Junho</a>
-            <a href="about.html" id="nav-sobre">Sobre</a>
-        </nav>
-        <div id="language-buttons-header">
-            <button onclick="setLanguage('pt')" id="btn-portugues-header">Português</button>
-            <button onclick="setLanguage('en')" id="btn-ingles-header">English</button>
-        </div>
+        <figure class="logo">
+            <img src="midia/img/logo/Logo - Mosaico da Vida.png" alt="Logo Mosaico Vida">
+            <h1 id="h1-home">Mosaico da Vida</h1>
+        </figure>
+        <ul class="menu">
+            <li>
+                <a href="index.html" id="nav-home">Home</a>
+            </li>
+            <li>
+                <a href="april.html" id="nav-abril">Abril</a>
+            </li>
+            <li>
+                <a href="may.html" id="nav-maio">Maio</a>
+            </li>
+            <li>
+                <a href="june.html" id="nav-junho">Junho</a>
+            </li>
+            <li>
+                <a href="other.html" id="nav-outras">Mais</a>
+            </li>
+            <li>
+                <a href="about.html" id="nav-sobre">Sobre</a>
+            </li>
+        </ul>
     </header>
-    <aside></aside>
     <main>
-        <div class="containerImages">
-            <div class="imgFull">
-                <img class="img-display" data-active="true" src="midia/img/abril/image111.png" alt="">
-                <img class="img-display" src="midia/img/maio/image/principal" alt="">
-                <img class="img-display" src="midia/img/junho/image/principal.png" alt="">
-                <button class="previous-button" data-change-img-button="previous">&#11164</button>
-                <button class="next-button" data-change-img-button="next">&#x2B9E</button>
-                <div class="indicators">
-                    <div class="indicator" data-active="true"></div>
-                    <div class="indicator"></div>
-                    <div class="indicator"></div>
+        <div class="main-content">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="figures">
-                    <figure class="figure">
-                        <img src="midia/img/abril/azul/images/austismo500px.png" class="figure-img img-fluid rounded"
-                            alt="...">
-                        <figcaption class="figure-caption text-end"></figcaption>
-                    </figure>
-                    <figure class="figure">
-                        <img src="midia/img/maio/image/principal" class="figure-img img-fluid rounded" alt="...">
-                        <figcaption class="figure-caption text-end"></figcaption>
-                    </figure>
-                    <figure class="figure">
-                        <img src="midia/img/junho/image/principal.png" class="figure-img img-fluid rounded" alt="...">
-                        <figcaption class="figure-caption text-end"></figcaption>
-                    </figure>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="midia/img/index/abril.webp" class="d-block w-100" alt="..." id="index-img-abril">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="midia/img/index/maio.webp" class="d-block w-100" alt="..." id="index-img-maio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="midia/img/index/junho.webp" class="d-block w-100" alt="..." id="index-img-junho">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            <div id="language-buttons-header">
+                <button onclick="setLanguage('pt')" id="btn-portugues-header">PT-BR</button>
+                <button onclick="setLanguage('en')" id="btn-ingles-header">EN-US</button>
+            </div>
+            <p class="introduction" id="text-home">
+                Bem-vindo ao nosso projeto interdisciplinar "Mosaico da Vida"! Neste site, apresentaremos os meses de
+                conscientização dedicados à saúde e segurança, destacando meses de conscientização importantes como o
+                Abril <strong id="blue">Azul</strong> (Autismo) e <strong id="green">Verde</strong> (Segurança do
+                Trabalho), Maio <strong id="yellow">Amarelo</strong> (Segurança no Trânsito) e Junho <strong
+                    id="red">Vermelho</strong> (Doação de Sangue) e <strong id="orange">Laranja</strong> (Anemia e
+                Leucemia). Nosso objetivo é informar e sensibilizar a sociedade sobre essas causas relevantes.
+            </p>
+        </div>
     </main>
-    <footer class="footer">
-        <p id="footer-text">Copyright &copy; 2025, CILM. Todos os direitos reservados.</p>
-    </footer>
     <script src="js/script.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <footer id="footer-text">
+        <p>Mosaico da Vida &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

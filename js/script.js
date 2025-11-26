@@ -1,99 +1,17 @@
-openMenu.addEventListener('click', () => {
-  menu.style.display = 'flex'
-
-  menu.style.right = (menu.offsetWidth * -1) + 'px'
-
-  openMenu.style.display = 'none'
-
-  setTimeout(() => {
-    menu.style.opacity = '1'
-    menu.style.right = '0'
-  }, 10)
-
-})
-
-closeMenu.addEventListener('click', () => {
-  menu.style.opacity = '0'
-
-  menu.style.left = (menu.offsetWidth * -1) + 'px'
-
-  setTimeout(() => {
-    menu.removeAttribute('style')
-    openMenu.removeAttribute('style')
-  }, 200)
-
-})
-
-const changeImgButton = document.querySelectorAll("[data-change-img-button]")
-
-changeImgButton.forEach(button => {
-  button.addEventListener("click", () => {
-    const imgFull = document.querySelector(".imgFull")
-    const images = imgFull.querySelectorAll(".img-display")
-    const activeImg = imgFull.querySelector("[data-active]")
-    let indexActiveImg = Array.from(images).indexOf(activeImg)
-
-    const indicators = document.querySelector(".indicators")
-    const indicator = indicators.querySelectorAll(".indicator");
-    const indicatorActive = indicators.querySelector("[data-active]");
-    let indexActiveIndicator = Array.from(indicator).indexOf(indicatorActive);
-
-    let timer;
-
-    // indicator index
-    indexActiveIndicator = button.dataset.changeImgButton === "next" ? (
-      indexActiveIndicator + 1
-    ) : (
-      indexActiveIndicator - 1
-    )
-
-    if (indexActiveIndicator >= indicator.length) {
-      indexActiveIndicator = 0
-    }
-
-    if (indexActiveIndicator < 0) {
-      indexActiveIndicator = indicator.length - 1
-    }
-    //images index
-    indexActiveImg = button.dataset.changeImgButton === "next" ? (
-      indexActiveImg + 1
-    ) : (
-      indexActiveImg - 1
-    )
-
-    if (indexActiveImg >= images.length) {
-      indexActiveImg = 0
-    }
-
-    if (indexActiveImg < 0) {
-      indexActiveImg = images.length - 1
-    }
-
-    activeImg.removeAttribute("data-active")
-    images[indexActiveImg].dataset.active = true
-
-    indicatorActive.removeAttribute("data-active")
-    indicator[indexActiveIndicator].dataset.active = true
-  })
-})
-
-const navLinks = document.querySelectorAll('aside a[data-nav-target]');
-navLinks.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    const targetIndex = parseInt(link.dataset.navTarget);
-
-    mudarImagemParaIndice(targetIndex);
-  });
-});
-
 const LANGUAGE_KEY = 'siteLanguage';
 const player = document.getElementById("player");
+const imgMaio = document.getElementById("img-maio");
+const imgAbril = document.getElementById("img-abril");
+const abrilVerde = document.getElementById("abril-verde-img");
+const abrilAzul = document.getElementById("abril-azul-img");
+const imgJunho = document.getElementById("img-junho");
+const indexAbril = document.getElementById("index-img-abril");
+const indexMaio = document.getElementById("index-img-maio");
+const indexJunho = document.getElementById("index-img-junho");
 
-/**
-  @param {string} lang 
- */
+
+
+
 async function setLanguage(lang) {
   localStorage.setItem(LANGUAGE_KEY, lang);
   const filePath = `js/data/translation/${lang}.json`;
@@ -118,6 +36,38 @@ async function setLanguage(lang) {
       player.src = translations['audio-src'];
       player.load();
     }
+    if (imgMaio && translations['img-maio']){
+      imgMaio.src = translations['img-maio'];
+      imgMaio.load()
+    }
+    if (imgAbril && translations['img-abril']){
+      imgAbril.src = translations['img-abril'];
+      imgAbril.load()
+    }
+    if (abrilVerde && translations['abril-verde-img']){
+      abrilVerde.src = translations['abril-verde-img'];
+      abrilVerde.load()
+    }
+      if (abrilAzul && translations['abril-azul-img']){
+      abrilAzul.src = translations['abril-azul-img'];
+      abrilAzul.load()
+    }
+    if (imgJunho && translations['img-junho']){
+      imgJunho.src = translations['img-junho'];
+      imgJunho.load()
+    }
+     if (indexAbril && translations['index-img-abril']){
+      indexAbril.src = translations['index-img-abril'];
+      indexAbril.load()
+    }
+     if (indexMaio && translations['index-img-maio']){
+      indexMaio.src = translations['index-img-maio'];
+      indexMaio.load()
+    }
+    if (imgActive && translations['index-img-junho']) {
+        imgActive.src = translations['index-img-junho'];
+        imgActive.onload 
+    } 
 
   } catch (error) {
     console.error("Falha ao aplicar a tradução:", error);
