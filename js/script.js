@@ -36,38 +36,41 @@ async function setLanguage(lang) {
       player.src = translations['audio-src'];
       player.load();
     }
-    if (imgMaio && translations['img-maio']){
+    if (imgMaio && translations['img-maio']) {
       imgMaio.src = translations['img-maio'];
       imgMaio.load()
     }
-    if (imgAbril && translations['img-abril']){
+    if (imgAbril && translations['img-abril']) {
       imgAbril.src = translations['img-abril'];
       imgAbril.load()
     }
-    if (abrilVerde && translations['abril-verde-img']){
+    if (abrilVerde && translations['abril-verde-img']) {
       abrilVerde.src = translations['abril-verde-img'];
       abrilVerde.load()
     }
-      if (abrilAzul && translations['abril-azul-img']){
+    if (abrilAzul && translations['abril-azul-img']) {
       abrilAzul.src = translations['abril-azul-img'];
       abrilAzul.load()
     }
-    if (imgJunho && translations['img-junho']){
+    if (imgJunho && translations['img-junho']) {
       imgJunho.src = translations['img-junho'];
       imgJunho.load()
     }
-     if (indexAbril && translations['index-img-abril']){
+
+
+    if (indexAbril && translations['index-img-abril']) {
       indexAbril.src = translations['index-img-abril'];
-      indexAbril.load()
     }
-     if (indexMaio && translations['index-img-maio']){
+
+    if (indexMaio && translations['index-img-maio']) {
       indexMaio.src = translations['index-img-maio'];
-      indexMaio.load()
     }
-    if (imgActive && translations['index-img-junho']) {
-        imgActive.src = translations['index-img-junho'];
-        imgActive.onload 
-    } 
+
+    if (indexJunho && translations['index-img-junho']) {
+      indexJunho.src = translations['index-img-junho'];
+    }
+
+
 
   } catch (error) {
     console.error("Falha ao aplicar a tradução:", error);
