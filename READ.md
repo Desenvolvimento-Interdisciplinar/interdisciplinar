@@ -1,5 +1,5 @@
 # interdisciplinar
-Desenvolvimento Web Interdisciplinar, Carlos, Igor, Luiz Fernando, Maria Luiza
+Desenvolvimento Web Inter, Carlos, Igor, Luiz Fernando, Maria Luiza
 
 26/11/2025
 
