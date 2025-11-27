@@ -6,6 +6,7 @@
     --yellow: #e1cc2d;
     --orange: #F47B26;
     --red: #FB2828;
+    --firefly: #0B232F;
 }
 
 /* Index: */
@@ -300,6 +301,22 @@
 }
 
 /* Maio/Amarelo: */
+#texto-transito-7{
+     text-align: center;
+    border-top: 2px solid var(--head-bg);
+    padding-top: 15px;
+}
+
+#texto-transito-7 a{
+    color: var(--firefly);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#texto-transito-7 a:hover{
+    color: var(--yellow);
+}
 
 
 
