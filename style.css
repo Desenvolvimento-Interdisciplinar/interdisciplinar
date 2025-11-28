@@ -1,0 +1,155 @@
+/* Estrutura: */
+
+:root {
+    --head-bg: #333;
+    --text-clr: #333;
+    --body-bg: #f5f5f5;
+    --main-bg: #fff;
+    --shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    --txt-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Pré definições (scroll, geral): */
+
+::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Opera */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer e Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body {
+    font-family: "Elms Sans", sans-serif;
+    font-size: 18px;
+    background-color: var(--body-bg);
+    color: var(--text-clr);
+}
+
+h1, h2 {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: var(--head-bg);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    margin-top: -70px;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    margin: 5px 0;
+}
+
+li {
+    margin-right: 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.025);
+}
+
+#h1-mosaic {
+    font-size: 22px;
+    margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin: 0;
+}
+
+main {
+    margin: 70px 0;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    padding: 15px 0;
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    width: 50%;
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .logo img {
+        width: 65%;
+        height: auto;
+    }
+
+    header {
+        margin: -90px 0;
+    }
+
+    header .menu {
+        margin: 8px 0px;
+        font-size: 16px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    main {
+        margin: 90px 0;
+    }
+}
+
+@media (max-width: 419px) {
+    .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        margin: -30px 0;
+    }
+
+    header .menu {
+        margin: 8px 0px;
+        font-size: 16px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    main {
+        margin: 30px 0;
+    }
+}
