@@ -72,6 +72,73 @@
     padding: 15px;
 }
 
+/*Abril models layout*/
+
+body[data-page="april"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: var(--green);
+}
+
+body[data-page="april"] > header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    width: 50%;
+    height: 5px;
+    background-color: var(--blue);
+}
+
+body[data-page="april"] > header:hover::after {
+    background-color: var(--blue);
+}
+body[data-page="april"] > header:hover::before {
+    background-color: var(--green);
+}
+
+/*Page blue*/
+body[data-page="azul"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--blue);
+    border-radius: 0 0 6px 6px;
+    
+}
+
+body[data-page="azul"] > header:hover::after {
+    animation: pulse-color 5s infinite alternate;
+}
+
+/*Page green*/
+body[data-page="gren"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--green);
+}
+
+body[data-page="gren"] > header:hover::after {
+    animation: pulse-color 3s infinite alternate;
+}
+
+@keyframes pulse-color {
+    0% { background-color: var(--blue); }
+    50% { background-color: transparent; }
+    100% { background-color: var(--blue); }
+}
+
 @media (max-width: 768px) {
     .main-content {
         max-width: 80%;

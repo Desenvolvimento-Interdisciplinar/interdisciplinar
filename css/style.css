@@ -70,32 +70,29 @@ li a {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: transform 0.3s ease;
 }
 
-.logo h1 {
+.logo:hover {
+    transform: scale(1.025);
+}
+
+#h1-mosaic {
     font-size: 22px;
     margin: 5px 0;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo img {
-    width: 20%;
+    width: 80px;
     height: auto;
+    margin: 0;
 }
 
 main {
     margin: 70px 0;
     padding: 20px;
-}
-
-#openMenu, #closeMenu {
-    border: none;
-    background: none;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0px 5px 0px 5px;
-    cursor: pointer;
-    display: none;
-    color: #fff;
 }
 
 footer {
