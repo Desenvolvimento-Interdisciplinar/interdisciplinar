@@ -9,11 +9,68 @@
     --firefly: #0B232F;
 }
 
+/* Fundos: */
+
+body[data-page="index"] {
+    background-image: url("/midia/img/index/fundoindex.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body[data-page="azul"] {
+    background-image: url("/midia/img/abril/azul/fundoblue.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body[data-page="gren"] {
+    background-image: url("/midia/img/abril/verde/fundogreen.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body[data-page="yellow"] {
+    background-image: url("/midia/img/maio/fundoyellow.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body[data-page="orange"] {
+    background-image: url("/midia/img/junho/laranja/fundoorange.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+body[data-page="red"] {
+    background-image: url("/midia/img/junho/vermelho/fundored.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    body[data-page="index"],
+    body[data-page="azul"],
+    body[data-page="gren"],
+    body[data-page="yellow"],
+    body[data-page="orange"],
+    body[data-page="red"] {
+        background-size: cover;
+    }
+}
+
 /* Index: */
 
 .main-content {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-content h2 {
@@ -22,11 +79,80 @@
     text-align: center;
 }
 
+#index {
+    gap: 15px;
+}
+
 .introduction {
     background-color: var(--main-bg);
+    height: 100%;
+    margin: 45px 0;
     border-radius: 8px;
     padding: 15px;
     box-shadow: var(--shadow);
+}
+
+.index-btn {
+    flex-direction: row;
+}
+
+.intro-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#carouselExampleIndicators {
+    margin: 15px auto;
+    box-shadow: var(--shadow);
+    width: 650px;
+    height: auto;
+}
+
+.carousel-item img {
+    border-radius: 8px;
+}
+
+@media (min-width: 769px) and (max-width: 1350px) {
+    #index {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    
+    .introduction {
+        margin: 0;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1601px) {
+    #carouselExampleIndicators {
+        width: 90%;
+    }
+
+    .introduction {
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #index {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .introduction {
+        margin: 0;
+    }
+
+    #carouselExampleIndicators {
+        width: 100%;
+    }
 }
 
 /* Páginas com Aside: */
@@ -72,76 +198,9 @@
     padding: 15px;
 }
 
-/*Abril models layout*/
-
-body[data-page="april"] > header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 5px;
-    background-color: var(--green);
-}
-
-body[data-page="april"] > header::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%; 
-    width: 50%;
-    height: 5px;
-    background-color: var(--blue);
-}
-
-body[data-page="april"] > header:hover::after {
-    background-color: var(--blue);
-}
-body[data-page="april"] > header:hover::before {
-    background-color: var(--green);
-}
-
-/*Page blue*/
-body[data-page="azul"] > header::after {
-    content: '';
-    position: absolute;
-    bottom: 0; 
-    left: 0%; 
-    width: 100%;
-    height: 5px;
-    background-color: var(--blue);
-    border-radius: 0 0 6px 6px;
-    
-}
-
-body[data-page="azul"] > header:hover::after {
-    animation: pulse-color 5s infinite alternate;
-}
-
-/*Page green*/
-body[data-page="gren"] > header::after {
-    content: '';
-    position: absolute;
-    bottom: 0; 
-    left: 0%; 
-    width: 100%;
-    height: 5px;
-    background-color: var(--green);
-}
-
-body[data-page="gren"] > header:hover::after {
-    animation: pulse-color 3s infinite alternate;
-}
-
-@keyframes pulse-color {
-    0% { background-color: var(--blue); }
-    50% { background-color: transparent; }
-    100% { background-color: var(--blue); }
-}
-
 @media (max-width: 768px) {
     .main-content {
-        max-width: 80%;
+        max-width: 95%;
         
     }
 
@@ -157,6 +216,7 @@ body[data-page="gren"] > header:hover::after {
         position: static;
         width: 100%;
         height: auto;
+        margin: 70px auto 15px auto;
     }
 
     .aside-cont img {
@@ -275,6 +335,219 @@ body[data-page="gren"] > header:hover::after {
     color: white;
 }
 
+.accordion {
+    margin: 5px auto;
+    width: 90%;
+}
+
+.accordion-header button {
+    padding: 7px 5px;
+}
+
+.accordion-body a img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.accordion-body a img:hover {
+    transform: scale(1.04);
+}
+
+.accordion-button {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.accordion-body {
+    padding: 0;    
+}
+
+#img-yellow {
+    filter: hue-rotate(655deg);
+}
+
+#img-orange {
+    filter: hue-rotate(635deg);
+}
+
+#img-red {
+    filter: hue-rotate(240deg);
+}
+
+/*Abril*/
+
+body[data-page="april"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: var(--green);
+    border-radius: 0 0 0 6px;
+    transition: background-color 0.5s ease;
+}
+
+body[data-page="april"] > header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    width: 50%;
+    height: 5px;
+    background-color: var(--blue);
+    border-radius: 0 0 6px 0;
+    transition: background-color 0.5s ease;
+}
+
+body[data-page="april"] > header:hover::after {
+    background-color: var(--blue);
+}
+body[data-page="april"] > header:hover::before {
+    background-color: var(--green);
+}
+
+/* Page Blue */
+
+body[data-page="azul"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--blue);
+    border-radius: 0 0 6px 6px;
+    
+}
+
+/* Page Green */
+
+body[data-page="gren"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--green);
+    border-radius: 0 0 6px 6px;
+}
+
+/* Maio/Yellow */
+
+body[data-page="may"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--yellow);
+    border-radius: 0 0 6px 6px;
+}
+
+body[data-page="yellow"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--yellow);
+    border-radius: 0 0 6px 6px;
+}
+
+/* June */
+
+body[data-page="june"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: var(--red);
+    border-radius: 0 0 0 6px;
+    transition: background-color 0.5s ease;
+}
+
+body[data-page="june"] > header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    width: 50%;
+    height: 5px;
+    background-color: var(--orange);
+    border-radius: 0 0 6px 0;
+    transition: background-color 0.5s ease;
+}
+
+body[data-page="june"] > header:hover::after {
+    background-color: var(--orange);
+}
+body[data-page="june"] > header:hover::before {
+    background-color: var(--red);
+}
+
+/* Red */
+
+body[data-page="red"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--red);
+    border-radius: 0 0 6px 6px;
+}
+
+/* Orange */
+
+body[data-page="orange"] > header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0%; 
+    width: 100%;
+    height: 5px;
+    background-color: var(--orange);
+    border-radius: 0 0 6px 6px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        max-width: 95%;
+        margin-top: 10px;
+        
+    }
+
+    .main-aside {
+        margin-top: 20px;
+    }
+
+    .as-cont {
+        flex-direction: column;
+    }
+
+    .as-cont .aside-cont {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .aside-cont img {
+        height: auto;
+        width: 100%;
+    }
+}
+
 /* Destaques no "Introduction": */
 
 #blue {
@@ -300,17 +573,6 @@ body[data-page="gren"] > header:hover::after {
 #red {
     color: var(--red);
     font-weight: bold;
-}
-
-#carouselExampleIndicators {
-    margin: 15px auto;
-    box-shadow: var(--shadow);
-    width: 100%;
-    height: auto;
-}
-
-.carousel-item img {
-    border-radius: 8px;
 }
 
 /* Abril: */
@@ -498,6 +760,24 @@ body[data-page="gren"] > header:hover::after {
 
 .sobre-soc {
     gap: 20px;
+}
+
+@media (min-width: 1351px) and (max-width: 1599px) {
+    .social, .sobre-col {
+        margin: 0 41.5%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .social, .sobre-col {
+        margin: 0 45%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .social, .sobre-col {
+        margin: 0 30%;
+    }
 }
 
 @media (max-width: 768px) {
