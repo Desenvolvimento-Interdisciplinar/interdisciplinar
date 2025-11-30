@@ -801,6 +801,8 @@ body[data-page="orange"] > header::after {
 .social {
     flex-direction: row;
     display: flex;
+    padding: 0 30px;
+    gap: 15px;
 }
 
 .social img {
