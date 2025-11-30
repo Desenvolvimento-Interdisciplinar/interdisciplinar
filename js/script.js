@@ -35,23 +35,18 @@ async function setLanguage(lang) {
     }
     if (imgMaio && translations['img-maio']) {
       imgMaio.src = translations['img-maio'];
-      imgMaio.load()
     }
     if (imgAbril && translations['img-abril']) {
       imgAbril.src = translations['img-abril'];
-      imgAbril.load()
     }
     if (abrilVerde && translations['abril-verde-img']) {
       abrilVerde.src = translations['abril-verde-img'];
-      abrilVerde.load()
     }
     if (abrilAzul && translations['abril-azul-img']) {
       abrilAzul.src = translations['abril-azul-img'];
-      abrilAzul.load()
     }
     if (imgJunho && translations['img-junho']) {
       imgJunho.src = translations['img-junho'];
-      imgJunho.load()
     }
 
     if (indexAbril && translations['index-img-abril']) {

@@ -313,6 +313,61 @@ body[data-page="red"] {
     color: white;
 }
 
+#link-consc {
+    transition: color, background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#link-consc:hover {
+    background-color: #060606;
+    color: white;
+}
+
+#link-impor {
+    transition: color, background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#link-impor:hover {
+    background-color: #060606;
+    color: white;
+}
+
+#link-part {
+    transition: color, background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#link-part:hover {
+    background-color: #060606;
+    color: white;
+}
+
+#link-aux {
+    transition: color, background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#link-aux:hover {
+    background-color: #060606;
+    color: white;
+}
+
+#link-proj {
+    transition: color, background-color 0.3s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#link-proj:hover {
+    background-color: #060606;
+    color: white;
+}
+
 #btn-red {
     transition: color, background-color 0.3s ease;
     border-radius: 8px;
