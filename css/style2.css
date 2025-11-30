@@ -12,42 +12,42 @@
 /* Fundos: */
 
 body[data-page="index"] {
-    background-image: url("/midia/img/index/fundoindex.webp");
+    background-image: url("../midia/img/index/fundoindex.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 body[data-page="azul"] {
-    background-image: url("/midia/img/abril/azul/fundoblue.webp");
+    background-image: url("../midia/img/abril/azul/fundoblue.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 body[data-page="gren"] {
-    background-image: url("/midia/img/abril/verde/fundogreen.webp");
+    background-image: url("../midia/img/abril/verde/fundogreen.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 body[data-page="yellow"] {
-    background-image: url("/midia/img/maio/fundoyellow.webp");
+    background-image: url("../midia/img/maio/fundoyellow.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 body[data-page="orange"] {
-    background-image: url("/midia/img/junho/laranja/fundoorange.webp");
+    background-image: url("../midia/img/junho/laranja/fundoorange.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 body[data-page="red"] {
-    background-image: url("/midia/img/junho/vermelho/fundored.webp");
+    background-image: url("../midia/img/junho/vermelho/fundored.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
