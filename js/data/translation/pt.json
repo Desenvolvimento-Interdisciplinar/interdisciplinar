@@ -33,6 +33,7 @@
     "nav-outras": "Mais",
     "footer-text": "Mosaico da Vida &copy; 2025 - Todos os direitos reservados.",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "footer-privacy":"Ver Política de Privacidade",
     "policy-text-1":"Esta Política de Privacidade explica como coletamos, usamos e protegemos as informações pessoais dos usuários. Nosso compromisso é garantir a segurança e a confidencialidade desses dados, em conformidade com a legislação vigente e as boas práticas de proteção da informação.",
     "policy-text-2":"Esta Política poderá ser atualizada periodicamente em razão de mudanças legais, tecnológicas ou operacionais. Recomendamos que os usuários consultem esta página regularmente para acompanhar possíveis alterações.",
@@ -47,6 +48,9 @@
 =======
     "footer-privacy": "Ver Política de Privacidade.",
 >>>>>>> e92881f (Implementação LGPD)
+=======
+    "footer-privacy":"Ver Política de Privacidade",
+>>>>>>> 6f8504a (att 01-12-25)
     "link-home-aside": "Home",
     "link-sobre-aside": "Sobre",
     "titulo-abril-aside": "Abril",
