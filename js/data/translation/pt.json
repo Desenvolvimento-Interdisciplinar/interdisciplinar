@@ -32,6 +32,7 @@
     "nav-sobre": "Sobre",
     "nav-outras": "Mais",
     "footer-text": "Mosaico da Vida &copy; 2025 - Todos os direitos reservados.",
+    "footer-privacy": "Ver Política de Privacidade.",
     "link-home-aside": "Home",
     "link-sobre-aside": "Sobre",
     "titulo-abril-aside": "Abril",
@@ -194,5 +195,16 @@
     "img-junho": "midia/img/junho/junhoPrincipal.webp",
     "index-img-abril":"midia/img/index/abril.webp",
     "index-img-maio":"midia/img/index/maio.webp",
-    "index-img-junho":"midia/img/index/junho.webp"
+    "index-img-junho":"midia/img/index/junho.webp",
+    "policy-text-1": "Esta Política de Privacidade explica como coletamos, usamos e protegemos as informações pessoais dos usuários. Nosso compromisso é garantir a segurança e a confidencialidade desses dados, em conformidade com a legislação vigente e as boas práticas de proteção da informação.",
+    "policy-text-2": "Esta Política poderá ser atualizada periodicamente em razão de mudanças legais, tecnológicas ou operacionais. Recomendamos que os usuários consultem esta página regularmente para acompanhar possíveis alterações.",
+    "policy-text-3": "De acordo com a LGPD, você tem direito a confirmar a existência de tratamento de dados.",
+    "policy-text-4": "Saiba mais <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm\" target=\"_blank\">clicando aqui</a>.",
+    "policy-title-1": "Informações que Coletamos",
+    "policy-title-2": "Direitos do Usuário",
+    "policy-list-1": "Este site respeita sua privacidade e não coleta, armazena ou processa informações pessoais identificáveis;",
+    "policy-list-2": "Não utilizamos cookies ou tecnologias semelhantes para monitorar a navegação dos usuários;",
+    "policy-list-3": "Podem ser registrados dados técnicos como endereço IP e tipo de navegador.",
+    "politicaModalLabel": "Política de Privacidade",
+    "policy-close": "Fechar"
 }
