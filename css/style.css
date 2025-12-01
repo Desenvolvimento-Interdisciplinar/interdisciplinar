@@ -134,6 +134,20 @@ footer p {
 
 .modal-body h2 {
     text-align: center;
+
+.modal-body h5 {
+    text-align: center;
+    margin-top: 10px;
+
+.modal-body h5 {
+    text-align: center;
+    margin-top: 10px;
+    
+.modal-body h2 {
+    text-align: center;
+    
+.modal-body h2 {
+    text-align: center;
 }
 
 .modal-body p, li {
@@ -149,6 +163,10 @@ footer p {
 
 .modal-body a:hover {
     color: #717171;
+}
+#policy-text-4 {
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
@@ -211,4 +229,5 @@ footer p {
         gap: 5px;
         width: 80%;
     }
+
 }
