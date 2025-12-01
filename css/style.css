@@ -174,6 +174,12 @@ footer p {
     main {
         margin: 90px 0;
     }
+
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 419px) {
@@ -198,5 +204,11 @@ footer p {
 
     main {
         margin: 30px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
     }
 }

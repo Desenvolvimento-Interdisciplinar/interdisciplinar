@@ -106,8 +106,35 @@
         </div>
     </main>
 
-    <footer id="footer-text">
-        <p>Mosaico da Vida &copy; 2025 - Todos os direitos reservados.</p>
+    <footer>
+        <p id="footer-text">Mosaico da Vida &copy; 2025 - Todos os direitos reservados.</p>
+        <button type="button" id="footer-privacy" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#politicaModal">Ver Política de Privacidade.</button>
+        <div class="modal fade" id="politicaModal" tabindex="-1" aria-labelledby="politicaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center w-100" id="politicaModalLabel">Política de Privacidade</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="policy-text-1">Esta Política de Privacidade explica como coletamos, usamos e protegemos as informações pessoais dos usuários. Nosso compromisso é garantir a segurança e a confidencialidade desses dados, em conformidade com a legislação vigente e as boas práticas de proteção da informação.</p>
+                        <p id="policy-text-2">Esta Política poderá ser atualizada periodicamente em razão de mudanças legais, tecnológicas ou operacionais. Recomendamos que os usuários consultem esta página regularmente para acompanhar possíveis alterações.</p>
+                        <h5 id="policy-title-1">Informações que Coletamos</h5>
+                        <ul>
+                            <li id="policy-list-1">Este site respeita sua privacidade e não coleta, armazena ou processa informações pessoais identificáveis.</li>
+                            <li id="policy-list-2">Não utilizamos cookies ou tecnologias semelhantes para monitorar a navegação dos usuários.</li>
+                            <li id="policy-list-3">De forma automática, podem ser registrados dados técnicos como endereço IP, tipo de navegador e páginas acessadas.</li>
+                        </ul>
+                        <h5 id="policy-title-2">Direitos do Usuário</h5>
+                        <p id="policy-text-3">De acordo com a LGPD, você tem direito a confirmar a existência de tratamento de dados, solicitar acesso, correção ou exclusão.</p>
+                        <p id="policy-text-4">Saiba mais <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709.htm" target="_blank">clicando aqui</a>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="policy-close">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
