@@ -109,6 +109,46 @@ footer {
     font-size: 14px;
     color: #666;
     width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    margin: 0 0 0 auto;
+}
+
+.btn-transparent {
+    margin: 0 auto 0 auto;
+    padding: 0 5px;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto;
+    height: 15px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body h2 {
+    text-align: center;
+}
+
+.modal-body p, li {
+    text-align: left;
+}
+
+.modal-body a {
+    color: #151515;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modal-body a:hover {
+    color: #717171;
 }
 
 @media (min-width: 420px) and (max-width: 768px) {

@@ -65,7 +65,9 @@ async function setLanguage(lang) {
     console.error("Falha ao aplicar a tradução:", error);
   }
 }
-
+function open(){
+  document.getElementById.style.display = "block";
+}
 function checkAndApplyLanguage() {
   const savedLanguage = localStorage.getItem(LANGUAGE_KEY);
   const langToApply = (savedLanguage === 'en') ? 'en' : 'pt';
