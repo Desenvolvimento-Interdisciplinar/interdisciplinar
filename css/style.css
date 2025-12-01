@@ -133,6 +133,7 @@ footer p {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal-body h2 {
     text-align: center;
 =======
@@ -140,6 +141,15 @@ footer p {
     text-align: center;
     margin-top: 10px;
 >>>>>>> e92881f (Implementação LGPD)
+=======
+.modal-body h5 {
+    text-align: center;
+    margin-top: 10px;
+=======
+.modal-body h2 {
+    text-align: center;
+>>>>>>> 9140782 (att 01-12-25)
+>>>>>>> 2e72ee9 (att 01-12-25)
 }
 
 .modal-body p, li {
@@ -156,13 +166,21 @@ footer p {
 .modal-body a:hover {
     color: #717171;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2e72ee9 (att 01-12-25)
 }
 
 #policy-text-4 {
     text-align: center;
     margin-top: 20px;
+<<<<<<< HEAD
 >>>>>>> e92881f (Implementação LGPD)
+=======
+=======
+>>>>>>> 9140782 (att 01-12-25)
+>>>>>>> 2e72ee9 (att 01-12-25)
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
