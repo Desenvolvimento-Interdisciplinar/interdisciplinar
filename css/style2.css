@@ -225,6 +225,12 @@ body[data-page="red"] {
     }
 }
 
+@media (min-width: 1600px) and (max-width: 1920px) {
+    .main-content {
+        max-width: 90%;
+    }
+}
+
 /* Aside Menu/Botões: */
 
 .aside-cont .btn-group {
