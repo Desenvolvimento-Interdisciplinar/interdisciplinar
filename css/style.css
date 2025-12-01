@@ -132,8 +132,14 @@ footer p {
     padding: 20px;
 }
 
+<<<<<<< HEAD
 .modal-body h2 {
     text-align: center;
+=======
+.modal-body h5 {
+    text-align: center;
+    margin-top: 10px;
+>>>>>>> e92881f (Implementação LGPD)
 }
 
 .modal-body p, li {
@@ -149,6 +155,14 @@ footer p {
 
 .modal-body a:hover {
     color: #717171;
+<<<<<<< HEAD
+=======
+}
+
+#policy-text-4 {
+    text-align: center;
+    margin-top: 20px;
+>>>>>>> e92881f (Implementação LGPD)
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
